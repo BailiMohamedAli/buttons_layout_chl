@@ -1,8 +1,31 @@
-
-
-    
 //methods
-export const StyleTwiker = (hover, variant, disableShadow, disabled, size) => {
+export const StyleTwiker = (hover, color, variant, disableShadow, disabled, size) => {
+    //color setter
+    let colorSet = null;
+    if(color === "default") {
+        colorSet = { 
+            backgroundColor : hover ? "#AEAEAE" : "#E0E0E0",
+            color: "#3F3F3F"
+        }
+    }
+    if(color === "primary") {
+        colorSet = { 
+            backgroundColor : hover ? "#0039CB" : "#2962FF",
+            color: "#fff"
+        }
+    }
+    if(color === "secondary") {
+        colorSet = { 
+            backgroundColor : hover ? "#1C313A" : "#455A64",
+            color: "#fff"
+        }
+    }
+    if(color === "danger") {
+        colorSet = { 
+            backgroundColor : hover ? "#9A0007" : "#D32F2F",
+            color: "#fff"
+        }
+    }
     //font styles segregation
     let fontStyles = {
         fontFamily: "'Noto Sans', sans-serif",
@@ -46,8 +69,8 @@ export const StyleTwiker = (hover, variant, disableShadow, disabled, size) => {
     let  mainStyle = {
         ...fontStyles,
         ...displayStyle,
+        ...colorSet,
         borderRadius: "6px",
-        backgroundColor: hover? "#AEAEAE" :"#E0E0E0",
         padding: "8px 16px",
         border: "none",
         boxShadow: "0px 2px 3px rgba(51, 51, 51, 0.2)"

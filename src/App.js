@@ -6,7 +6,7 @@ function App() {
     <div>
       <h1>main App layout</h1>
       <hr />
-      <ButtonSpe />
+      <ButtonSpe color="danger"/>
       <hr />
       <ButtonSpe text="test 01" variant="outline" />
       <hr />
