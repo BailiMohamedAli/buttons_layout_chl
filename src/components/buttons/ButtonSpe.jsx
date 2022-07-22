@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import styleButton from './buttonStyleProp';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCodeBranch } from '@fortawesome/free-solid-svg-icons'
 
 
 const ButtonSpe = ({text, variant, disableShadow, disabled}) => {
@@ -30,7 +32,8 @@ const ButtonSpe = ({text, variant, disableShadow, disabled}) => {
         style={styleButton.StyleTwiker(isHovering, variant, disableShadow, disabled)}
         onMouseEnter={ handleMouseEnter }
         onMouseLeave={ handleMouseLeave }
-      > {text} </button>
+      > {text} 
+      <FontAwesomeIcon icon={ faCodeBranch }/></button>
     </>
   )
 }
