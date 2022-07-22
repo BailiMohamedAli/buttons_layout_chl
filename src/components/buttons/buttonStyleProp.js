@@ -1,4 +1,5 @@
 
+
     
 //methods
 export const StyleTwiker = (hover, variant, disableShadow, disabled) => {
@@ -10,11 +11,19 @@ export const StyleTwiker = (hover, variant, disableShadow, disabled) => {
         fontSize: "14px",
         lineHeight: "20px",
     }
+    //dispaly and flexbox
+    let displayStyle = {
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-around",
+        minWidth: "81px",
+        maxWidth: "220px",
+        height: "36px",
+    }
     //main style default
     let  mainStyle = {
         ...fontStyles,
-        width: "81px",
-        height: "36px",
+        ...displayStyle,
         borderRadius: "6px",
         backgroundColor: hover? "#AEAEAE" :"#E0E0E0",
         padding: "8px 16px",
@@ -55,10 +64,24 @@ export const StyleTwiker = (hover, variant, disableShadow, disabled) => {
 
 }
 
+//icon style
+export const iconTwiker = (marginSetter) => {
+    let marginStyle = {
+        margin: marginSetter === "start" 
+            ? "0px 10px 0px 0px" : marginSetter === "end" 
+                ? "0px 00px 0px 10px" : "0px", 
+    }
+    let iconStyle = {
+        ...marginStyle,
+    }
+    return iconStyle
+}
+
 // variant dependant style
 
 const styleButton = {
-    StyleTwiker
+    StyleTwiker,
+    iconTwiker
 }
 
 export default styleButton;

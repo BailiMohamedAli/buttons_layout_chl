@@ -26,7 +26,7 @@ function App() {
       <p>disabled true</p>
       <ButtonSpe text="test 02" disabled={true}/>
       <p>disabled true</p>
-      <ButtonSpe text="test 02" variant="text" disabled={true}/>
+      <ButtonSpe text="test 02" variant="text" disabled={true} endIcon />
       <hr/>
     </div>
   );
