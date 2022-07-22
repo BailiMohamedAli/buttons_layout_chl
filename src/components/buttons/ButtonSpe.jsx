@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import styleButton from './buttonStyleProp';
 
-const Button = ({text, variant, disableShadow, disabled}) => {
+
+const ButtonSpe = ({text, variant, disableShadow, disabled}) => {
   //null conditions
   if(!text) text = "Default";
   if(!variant) variant = "Default";
@@ -34,4 +35,4 @@ const Button = ({text, variant, disableShadow, disabled}) => {
   )
 }
 
-export default Button
+export default ButtonSpe
