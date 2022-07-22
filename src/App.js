@@ -1,6 +1,7 @@
 import ButtonSpe from "./components/buttons/ButtonSpe";
 
 function App() {
+
   return (
     <div>
       <h1>main App layout</h1>
@@ -26,7 +27,7 @@ function App() {
       <p>disabled true</p>
       <ButtonSpe text="test 02" disabled={true}/>
       <p>disabled true</p>
-      <ButtonSpe text="test 02" variant="text" disabled={true} endIcon />
+      <ButtonSpe text="test 02" variant="text" disabled={true} endIcon="code" />
       <hr/>
     </div>
   );
