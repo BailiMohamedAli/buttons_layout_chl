@@ -2,7 +2,7 @@
 
     
 //methods
-export const StyleTwiker = (hover, variant, disableShadow, disabled) => {
+export const StyleTwiker = (hover, variant, disableShadow, disabled, size) => {
     //font styles segregation
     let fontStyles = {
         fontFamily: "'Noto Sans', sans-serif",
@@ -11,15 +11,36 @@ export const StyleTwiker = (hover, variant, disableShadow, disabled) => {
         fontSize: "14px",
         lineHeight: "20px",
     }
+    //let size rectifier
+    let sizeStyle= null;
+    if(size === "sm"){
+        sizeStyle = {
+            minWidth: "62px",
+            maxWidth: "120px",
+            height: "32px",
+        }
+    }
+    if(size === "md"){
+        sizeStyle = {
+            minWidth: "81px",
+            maxWidth: "220px",
+            height: "36px",
+        }
+    }
+    if(size === "lg"){
+        sizeStyle = {
+            minWidth: "93px",
+            maxWidth: "260px",
+            height: "42px",
+        }
+    }
     //dispaly and flexbox
     let displayStyle = {
         display: "flex",
         flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
-        minWidth: "81px",
-        maxWidth: "220px",
-        height: "36px",
+        ...sizeStyle
     }
     //main style default
     let  mainStyle = {
@@ -58,6 +79,7 @@ export const StyleTwiker = (hover, variant, disableShadow, disabled) => {
             backgroundColor: hover? "rgba(41, 98, 255, 0.1)": "transparent",
             boxShadow: "none"
         }
+    
     }
     
     //defaulting

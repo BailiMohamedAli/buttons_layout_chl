@@ -14,9 +14,9 @@ function App() {
       <hr />
       <h3>test boxShadow</h3>
       <p>shadow: false</p>
-      <ButtonSpe disableShadow={true}/> 
+      <ButtonSpe disableShadow={true} size="lg" /> 
       <p>shadow: true</p>
-      <ButtonSpe disableShadow={false}/> 
+      <ButtonSpe disableShadow={false} size="sm"/> 
       <h2>test 2</h2>
       <p>shadow: false</p>
       <ButtonSpe variant="outline" disableShadow={true}/> 

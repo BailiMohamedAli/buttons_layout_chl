@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCodeBranch, faCodeCommit, faCodeMerge, faCode, faCodeCompare } from '@fortawesome/free-solid-svg-icons'
 
 
-const ButtonSpe = ({text, variant, disableShadow, disabled, startIcon, endIcon}) => {
+const ButtonSpe = ({text, variant, disableShadow, disabled, startIcon, endIcon, size}) => {
   //null conditions gard clauses
   if(!text) text = "Default";
   if(!variant) variant = "Default";
@@ -12,6 +12,7 @@ const ButtonSpe = ({text, variant, disableShadow, disabled, startIcon, endIcon})
   if(!disabled) disabled = false;
   if(!startIcon) startIcon = null;
   if(!endIcon) endIcon = null;
+  if(!size) size = "md";
 
   //margin icon setter
   let marginSet = ''
@@ -47,7 +48,7 @@ const ButtonSpe = ({text, variant, disableShadow, disabled, startIcon, endIcon})
     <>
       <button 
         disabled={disabled}
-        style={styleButton.StyleTwiker(isHovering, variant, disableShadow, disabled)}
+        style={styleButton.StyleTwiker(isHovering, variant, disableShadow, disabled, size)}
         onMouseEnter={ handleMouseEnter }
         onMouseLeave={ handleMouseLeave }
       > 
