@@ -15,7 +15,8 @@ export const StyleTwiker = (hover, variant, disableShadow, disabled) => {
     let displayStyle = {
         display: "flex",
         flexDirection: "row",
-        justifyContent: "space-around",
+        justifyContent: "center",
+        alignItems: "center",
         minWidth: "81px",
         maxWidth: "220px",
         height: "36px",

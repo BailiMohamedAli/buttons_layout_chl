@@ -1,2 +1,2 @@
-#1 check the google material icon for react npm or else
-    !important: we have already provided a url link in the main => index.css file
+# important 
+    the icons are not well centered in the button use flex to center them correctly!
