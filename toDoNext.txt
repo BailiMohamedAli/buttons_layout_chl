@@ -1,2 +1,2 @@
 # important 
-    the icons are not well centered in the button use flex to center them correctly!
+    refactor the code for the buttonStyles.js and make it more segmented for better reading

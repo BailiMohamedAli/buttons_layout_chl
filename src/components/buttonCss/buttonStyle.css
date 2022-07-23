@@ -1,0 +1,50 @@
+@import url('./buttonVars.css');
+
+.btn{
+    width: var(--base-width);
+    height: var(--base-heigth);
+    border-radius: var(--base-radius);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+}
+
+.btn:hover{
+    background-color: var(--default-hover);
+}
+
+.btn.shadow__off{
+    box-shadow: none;
+}
+
+.default{
+    background-color: var(--default);
+    color: var(--color-main);
+}
+
+.primary{
+    background-color: var(--primary);
+    color: var(--color-revert);
+}
+
+.primary:hover{
+    background-color: var(--primary-hover);
+}
+
+.secondary{
+    background-color: var(--secondary);
+    color: var(--color-revert);
+}
+
+.secondary:hover{
+    background-color: var(--secondary-hover);
+}
+
+.danger{
+    background-color: var(--danger);
+    color: var(--color-revert);
+}
+
+.danger:hover{
+    background-color: var(--danger-hover);
+}

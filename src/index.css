@@ -2,11 +2,25 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
+:root{
+    --default: #E0E0E0;
+    --default-hover: #AEAEAE;
+    --primary: #2962FF;
+    --primary-hover: #0039CB;
+    --secondary: #455A64;
+    --secondary-hover: #1C313A;
+    --danger: #D32F2F;
+    --danger-hover: #9A0007;
+    --color-main: #3F3F3F;
+    --color-revert: #fff;
+    --size-font: 14px;
+}
+
 body{
     font-family: 'Noto Sans', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: var(--size-font);
     line-height: 20px;
 
     color: #3F3F3F;
