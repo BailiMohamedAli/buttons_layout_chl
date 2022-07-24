@@ -11,8 +11,10 @@
     --secondary-hover: #1C313A;
     --danger: #D32F2F;
     --danger-hover: #9A0007;
+    --disable: #E0E0E0;
     --color-main: #3F3F3F;
     --color-revert: #fff;
+    --color-disable: #9E9E9E;
     --size-font: 14px;
 }
 

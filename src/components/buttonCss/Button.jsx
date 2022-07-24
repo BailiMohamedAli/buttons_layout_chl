@@ -17,7 +17,7 @@ const Button = ({
         ${color} 
         ${!disableShadow ? "" : "shadow__off"}
         ${variant === "text" ? `outline ${variant}`: variant}
-        ${disabled ? "disable" : ""}
+        ${disabled && !variant ? "disable" : disabled && variant ? "disable__text":""}
         `}>
             {text}
         </button>

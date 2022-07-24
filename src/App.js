@@ -19,7 +19,9 @@ function App() {
       <hr/>
       <Button variant="text"/>
       <hr/>
-      <Button variant="text" disabled={true} />
+      <Button color="danger" disabled={true} />
+      <hr/>
+      <Button variant="text" color="danger" disabled={true} />
     </div>
     // <div>
     //   <h1>main App layout</h1>

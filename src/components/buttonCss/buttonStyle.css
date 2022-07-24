@@ -82,8 +82,30 @@
 .disable{
     width: calc(var(--base-width) + 7px);
     height: calc(var(--base-height) + 2px);
-    background-color: #E0E0E0;
-    color: #9E9E9E;
+    background-color: var(--disable);
+    color: var(--color-disable);
     cursor: not-allowed; 
-    pointer-events: none;
+}
+
+.disable:hover{
+    background-color: var(--disable);
+    color: var(--color-disable);
+}
+
+.disable__text{
+    width: calc(var(--base-width) + 7px);
+    height: calc(var(--base-height) + 2px);
+    background-color: #fff;
+    color: var(--color-disable);
+    border: none;
+    text-align: start;
+    align-items: center;
+    cursor: not-allowed; 
+}
+
+.disable__text:hover{
+    background-color: #fff;
+    color: var(--color-disable);
+    text-align: start;
+    align-items: center;
 }
