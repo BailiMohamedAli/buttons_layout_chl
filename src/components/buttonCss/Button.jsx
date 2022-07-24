@@ -9,7 +9,8 @@ const Button = ({
     variant= "",
     disabled = false,
     startIcon,
-    endIcon
+    endIcon,
+    size = "md"
 }) => {
   return (
     <div>
@@ -21,6 +22,7 @@ const Button = ({
         ${!disableShadow ? "" : "shadow__off"}
         ${variant === "text" ? `outline ${variant}`: variant}
         ${disabled && !variant ? "disable" : disabled && variant ? "disable__text":""}
+        ${size}
         `}>
           {startIcon === "AddShoppingCart" ? <AddShoppingCart className="iconstart__margin" /> 
           : startIcon === "Adb" ? <Adb className="iconstart__margin" /> 

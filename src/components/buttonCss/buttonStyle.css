@@ -1,8 +1,10 @@
 @import url('./buttonVars.css');
 
 .btn{
-    width: var(--base-width);
-    height: var(--base-height);
+    min-width: var(--base-width);
+    min-height: var(--base-height);
+    max-width: calc(var(--base-width) + 59px);
+    max-height: calc(var(--base-height) + 6px);
     border-radius: var(--base-radius);
     border: none;
     cursor: pointer;
@@ -10,6 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 8px 16px;
 }
 
 .btn:hover{
@@ -110,4 +113,33 @@
     color: var(--color-disable);
     text-align: start;
     align-items: center;
+}
+
+/* Icons option */
+
+.iconstart__margin{
+    margin-right: 8px;
+}
+
+.iconend__margin{
+    margin-left: 8px;
+}
+
+/* Size option */
+
+.sm{
+    min-width: 73px;
+    min-height: 32px;
+    max-width: calc(73px + 10px);
+    max-height: calc(32px + 4px);
+}
+
+.md{
+    min-width: var(--base-width);
+    min-height: var(--base-height);
+}
+
+.lg{
+    width: calc(var(--base-width) + 12px);
+    height: calc(var(--base-height) + 11px);
 }
