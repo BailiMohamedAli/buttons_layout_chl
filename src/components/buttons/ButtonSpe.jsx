@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styleButton from './buttonStyleProp';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCodeBranch, faCodeCommit, faCodeMerge, faCode, faCodeCompare } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faCodeBranch, faCodeCommit, faCodeMerge, faCode, faCodeCompare } from '@fortawesome/free-solid-svg-icons'
 
 
 const ButtonSpe = ({
@@ -28,6 +28,7 @@ const ButtonSpe = ({
       };
 
   //icon type setter
+  /*
   const iconType = () =>{
     if(startIcon === "code_branch" || endIcon === "code_branch") 
       return faCodeBranch;
@@ -40,6 +41,18 @@ const ButtonSpe = ({
     if(startIcon === "code_compare" || endIcon === "code_compare")
       return faCodeCompare;
   }
+  //react integration intag function
+    //start icon
+    {
+        //conditiona rendering startIcon
+        startIcon ? <FontAwesomeIcon icon={ iconType() } style={styleButton.iconTwiker(marginSet)}/> : null
+    }
+    //endIcon
+    {
+        //conditiona rendering endIcon
+        endIcon ? <FontAwesomeIcon icon={ iconType() } style={styleButton.iconTwiker(marginSet)}/> : null
+    }
+  */
   
   //styles initialization
 
@@ -50,16 +63,7 @@ const ButtonSpe = ({
         style={styleButton.StyleTwiker(isHovering, color, variant, disableShadow, disabled, size)}
         onMouseEnter={ handleMouseEnter }
         onMouseLeave={ handleMouseLeave }
-      > 
-        {
-        //conditiona rendering startIcon
-        startIcon ? <FontAwesomeIcon icon={ iconType() } style={styleButton.iconTwiker(marginSet)}/> : null
-        }
-        {text} 
-        {
-        //conditiona rendering endIcon
-        endIcon ? <FontAwesomeIcon icon={ iconType() } style={styleButton.iconTwiker(marginSet)}/> : null
-        } </button>
+      > {text} </button>
     </>
   )
 }
