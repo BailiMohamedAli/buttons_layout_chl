@@ -2,13 +2,23 @@ import React from 'react'
 import './buttonStyle.css'
 
 const Button = ({
-    text = "testing",
+    text = "Default",
     color = "default",
-    disableShadow = false
+    disableShadow = false,
+    variant= "",
+    disabled = false
 }) => {
   return (
     <div>
-        <button className={`btn ${color} ${!disableShadow ? "" : "shadow__off"}`}>
+        <button
+        disabled = {disabled}
+        onClick={() => console.log("testrun") }
+        className={`btn 
+        ${color} 
+        ${!disableShadow ? "" : "shadow__off"}
+        ${variant === "text" ? `outline ${variant}`: variant}
+        ${disabled ? "disable" : ""}
+        `}>
             {text}
         </button>
     </div>

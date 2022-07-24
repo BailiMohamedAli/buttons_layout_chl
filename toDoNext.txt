@@ -1,2 +1,3 @@
 # important 
-    refactor the code for the buttonStyles.js and make it more segmented for better reading
+    solve the disable option when it comes to the variant value of outlined text,
+        1 we need a solution no the best but working then refactor

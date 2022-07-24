@@ -2,7 +2,7 @@
 
 .btn{
     width: var(--base-width);
-    height: var(--base-heigth);
+    height: var(--base-height);
     border-radius: var(--base-radius);
     border: none;
     cursor: pointer;
@@ -13,10 +13,12 @@
     background-color: var(--default-hover);
 }
 
+/* shadow control options */
 .btn.shadow__off{
     box-shadow: none;
 }
 
+/* color options */
 .default{
     background-color: var(--default);
     color: var(--color-main);
@@ -47,4 +49,41 @@
 
 .danger:hover{
     background-color: var(--danger-hover);
+}
+
+/* outlined options */
+
+.outline{
+    width: calc(var(--base-width) + 7px);
+    height: calc(var(--base-height) + 2px);
+    background-color: #fff;
+    color: #3D5AFE;
+    border: 1px solid #3D5AFE;
+    box-shadow: none;
+}
+
+.outline:hover{
+    background: rgba(41, 98, 255, 0.1);
+}
+
+.text{
+    border: none;
+    text-align: start;
+    align-items: center;
+}
+
+.text:hover{
+    background: rgba(41, 98, 255, 0.1);
+    text-align: center;
+}
+
+/* disabled options */
+
+.disable{
+    width: calc(var(--base-width) + 7px);
+    height: calc(var(--base-height) + 2px);
+    background-color: #E0E0E0;
+    color: #9E9E9E;
+    cursor: not-allowed; 
+    pointer-events: none;
 }

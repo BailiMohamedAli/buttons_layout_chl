@@ -5,16 +5,21 @@ function App() {
 
   return (
     <div>
-      <Button text="test" />
+      <Button />
       <hr/>
-      <Button text="test" color="primary"/>
+      <Button color="primary"/>
       <hr/>
-      <Button text="test" color="primary" disableShadow/>
+      <Button color="primary" disableShadow/>
       <hr/>
-      <Button text="test" color="secondary"/>
+      <Button color="secondary"/>
       <hr/>
-      <Button text="test" color="danger"/>
+      <Button color="danger"/>
       <hr/>
+      <Button variant="outline"/>
+      <hr/>
+      <Button variant="text"/>
+      <hr/>
+      <Button variant="text" disabled={true} />
     </div>
     // <div>
     //   <h1>main App layout</h1>
