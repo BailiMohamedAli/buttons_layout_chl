@@ -10,6 +10,10 @@ function App() {
       <Button size="md" />
       <hr />
       <Button size="lg" />
+      <hr />
+      <Button startIcon="Adb" />
+      <hr />
+      <Button endIcon="Adb" />
     </div>
   );
 }
