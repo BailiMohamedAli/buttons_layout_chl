@@ -1,6 +1,7 @@
 // import Button from "./components/buttonCss/Button";
 import NavSideBar from "./components/main/NavSideBar";
 // import ButtonSpe from "./components/buttons/ButtonSpe";
+import './app.css';
 
 function App() {
 
