@@ -12,6 +12,11 @@ const Button = ({
     endIcon,
     size = "md"
 }) => {
+
+  const setPosition = () =>{
+    if(endIcon) return true;
+      return false;
+  }
   return (
     <div>
         <button
@@ -24,9 +29,9 @@ const Button = ({
         ${disabled && !variant ? "disable" : disabled && variant ? "disable__text":""}
         ${size}
         `}>
-          {startIcon ? <IconType setIcon={startIcon} position={false} /> : null}
+          {startIcon ? <IconType setIcon={startIcon} position={setPosition()} /> : null}
             {text}
-          {endIcon ? <IconType setIcon={endIcon} position={true} /> : null}  
+          {endIcon ? <IconType setIcon={endIcon} position={setPosition()} /> : null}  
         </button>
     </div>
   )
