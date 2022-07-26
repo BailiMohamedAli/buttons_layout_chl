@@ -1,0 +1,31 @@
+.navside{
+    margin: 48px 57px;
+}
+
+.navside__title{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(var(--size-font) + 4px);
+    line-height: 20px;
+    color: #090F31;
+}
+.dash{
+    color: #F7542E;
+}
+
+/*menu*/
+
+.menu{
+    font-size: calc(var(--size-font) + 4px);
+    margin-top: 190px;
+}
+.menu>h3{
+    margin-bottom: 48px;
+    color: var(--color-disable);
+    font-weight: 500;
+}
+
+h3.menu__active{
+    color: #090F31;
+}

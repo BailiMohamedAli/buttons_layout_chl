@@ -1,19 +1,12 @@
-import Button from "./components/buttonCss/Button";
+// import Button from "./components/buttonCss/Button";
+import NavSideBar from "./components/main/NavSideBar";
 // import ButtonSpe from "./components/buttons/ButtonSpe";
 
 function App() {
 
   return (
     <div>
-      <Button size="sm" />
-      <hr />
-      <Button size="md" />
-      <hr />
-      <Button size="lg" />
-      <hr />
-      <Button startIcon="Adb" />
-      <hr />
-      <Button endIcon="Adb" />
+      <NavSideBar />
     </div>
   );
 }
